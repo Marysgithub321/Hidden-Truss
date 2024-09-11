@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Truss Quote Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Truss Quote Calculator</h1>
+    </nav>
+  </header>
+
+  <main class="card">
+    <div class="top-section">
+      <div class="left-section">
+        <section>
+          <label for="date">Date:</label>
+          <input type="date" id="date" class="navigable" required>
+          <label for="jobNumber">Job Number:</label>
+          <input type="text" id="jobNumber" class="navigable" required>
+        </section>
+        <section class="CustomerInfo">
+          <label for="customerName">Customer Name:</label>
+          <input type="text" id="customerName" class="navigable" required>
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="text" id="phoneNumber" class="navigable" required>
+          <label for="address">Address:</label>
+          <input type="text" id="address" class="navigable" required>
+        </section>
+      </div>
+      <div class="right-section">
+        <section class="extraCharges">
+          <label for="extraDescription">Extra Charges Description:</label>
+          <input type="text" id="extraDescription" class="navigable" maxlength="50" />
+          <label for="extraCharges">Extra Charges ($):</label>
+          <input type="number" id="extraCharges" class="navigable" value="0" step="0.01" />
+        </section>
+        <div class="total-section">
+          <h2>Total Costs</h2>
+          <p>Subtotal: <span id="subTotal">$0.00</span></p>
+          <p>GST/HST (13%): <span id="taxAmount">$0.00</span></p>
+          <p>Total: <span id="totalAll">$0.00</span></p>
+        </div>
+
+        <div class="material-prices-section">
+          <div class="dropdown">
+            <button class="dropbtn">Material Prices</button>
+            <div class="dropdown-content hidden">
+              <div class="price-input">
+                <label for="price_2x12">2x12 per ft:</label>
+                <input type="number" id="price_2x12" class="navigable" value="1.85" step="0.01" />
+                <label for="price_2x10">2x10 per ft:</label>
+                <input type="number" id="price_2x10" class="navigable" value="1.25" step="0.01" />
+                <label for="price_2x8">2x8 per ft:</label>
+                <input type="number" id="price_2x8" class="navigable" value="1.7" step="0.01" />
+                <label for="price_2x6">2x6 per ft:</label>
+                <input type="number" id="price_2x6" class="navigable" value="0.87" step="0.01" />
+                <label for="price_2x4">2x4 per ft:</label>
+                <input type="number" id="price_2x4" class="navigable" value="0.55" step="0.01" />
+                <label for="price_2x3">2x3 per ft:</label>
+                <input type="number" id="price_2x3" class="navigable" value="0.3" step="0.01" />
+                <label for="price_plates">Plates per sq inch:</label>
+                <input type="number" id="price_plates" class="navigable" value="0.06" step="0.01" />
+                <label for="laborMultiplier">Labor Multiplier:</label>
+                <input type="number" id="laborMultiplier" class="navigable" value="2" step="0.1" min="1" />
+                <button type="button" onclick="updatePrices()">Update Prices</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="buttons-section">
+      <button id="addPageButton" class="dropbtn">Add Page</button>
+      <button id="getQuoteButton">Get Quote</button>
+      <button id="priceBreakdownButton">Price Breakdown</button>
+      <img id="logo" src="images/logo.png" style="display: none" />
+      <img id="logo2" src="images/logo2.png" style="display: none" />
+    </div>
+     
+   
+    <div id="materialSections"></div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Hidden Enterprises Ltd.</p>
+  </footer>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="getQuote.js"></script>
+  <script src="priceBreakdown.js"></script>
+  <script src="main1.js"></script>
+</body>
+</html>
