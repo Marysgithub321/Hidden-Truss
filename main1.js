@@ -180,35 +180,35 @@ document.getElementById("addPageButton").addEventListener("click", function () {
         </div>
         <div class="input-group">
           <label for="board_2x12_${sectionNumber}">2x12 (board ft):</label>
-          <input type="number" id="board_2x12_${sectionNumber}" class="navigable" value="0" step="1" />
+          <input type="number" id="board_2x12_${sectionNumber}" class="navigable" value="" step="1" />
         </div>
         <div class="input-group">
           <label for="board_2x10_${sectionNumber}">2x10 (board ft):</label>
-          <input type="number" id="board_2x10_${sectionNumber}" class="navigable" value="0" step="1" />
+          <input type="number" id="board_2x10_${sectionNumber}" class="navigable" value="" step="1" />
         </div>
         <div class="input-group">
           <label for="board_2x8_${sectionNumber}">2x8 (board ft):</label>
-          <input type="number" id="board_2x8_${sectionNumber}" class="navigable" value="0" step="1" />
+          <input type="number" id="board_2x8_${sectionNumber}" class="navigable" value="" step="1" />
         </div>
         <div class="input-group">
           <label for="board_2x6_${sectionNumber}">2x6 (board ft):</label>
-          <input type="number" id="board_2x6_${sectionNumber}" class="navigable" value="0" step="1" />
+          <input type="number" id="board_2x6_${sectionNumber}" class="navigable" value="" step="1" />
         </div>
         <div class="input-group">
           <label for="board_2x4_${sectionNumber}">2x4 (board ft):</label>
-          <input type="number" id="board_2x4_${sectionNumber}" class="navigable" value="0" step="1" />
+          <input type="number" id="board_2x4_${sectionNumber}" class="navigable" value="" step="1" />
         </div>
         <div class="input-group">
           <label for="board_2x3_${sectionNumber}">2x3 (board ft):</label>
-          <input type="number" id="board_2x3_${sectionNumber}" class="navigable" value="0" step="1" />
+          <input type="number" id="board_2x3_${sectionNumber}" class="navigable" value="" step="1" />
         </div>
         <div class="input-group">
           <label for="plates_${sectionNumber}">Plates:</label>
-          <input type="number" id="plates_${sectionNumber}" class="navigable" value="0" step="1" />
+          <input type="number" id="plates_${sectionNumber}" class="navigable" value="" step="1" />
         </div>
         <div class="input-group">
           <label for="extra_${sectionNumber}">Extra Charge:</label>
-          <input type="number" id="extra_${sectionNumber}" class="navigable" value="0" step="1" />
+          <input type="number" id="extra_${sectionNumber}" class="navigable" value="" step="1" />
         </div>
         
         <div class="input-group">
